@@ -21,14 +21,14 @@ section{
     /*NAVIGATION*/
 
 nav {
-    padding: 32px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
     color: #243e63;
 }
 
-.nav__row {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .nav__logo {
     display: flex;
@@ -54,7 +54,51 @@ img{
     padding-bottom: 2px;
 }
 
-button {
-    cursor: pointer;
-    border: none;
+.nav__link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #243e63;
+    font-size: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.nav__link:hover {
+    
+    font-weight: 700;
+    color: #6415ff;
+    font-size: 16px;
+    text-underline-offset: .5rem;
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav__link--primary{
+  display: flex;
+  background-color: #6415ff;
+  color:white;
+  border-radius: 2rem;
+  height: 40px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+
+.login{
+    margin: 0px 24px 0px 48px;
+}
+
+.sec1__email--section{
+ margin: 64px;
+ padding-top: 48px;
+
+
 }
